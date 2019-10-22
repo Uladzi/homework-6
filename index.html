@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LINKS</title>
+    <style>
+        .MENU-LIST-WAY {
+            margin-bottom: 40px;
+        }
+        
+        ul {
+            padding: 0;
+        }
+        
+        ul li {
+            padding: 5px 10px;
+            display: inline;
+            list-style-type: none;
+            border-right: solid red 3px;
+        }
+        
+        ul li:last-child {
+            border-right: none;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        td::after {
+            padding: 5px 10px 6px 0px;
+            content: "";
+            border-right: solid red 3px;
+        }
+        
+        td:last-child::after {
+            border-right: none;
+        }
+        
+        td {
+            padding-left: 10px;
+        }
+        
+        .MENU-SPAN-WAY {
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+        
+        img {
+            left: 12px;
+            top: 8px;
+            height: 30px;
+            position: relative;
+        }
+        
+        span {
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Способ расположения cсылок в строку: придание элементам списка свойства "display" со значением "inline".
+    Разделители сделаны с помощью свойства "border-style". Самый простой из 3-х представленных мною методов.-->
+    <div class="MENU-LIST-WAY">
+        <ul>
+            <li><a href="#" title="homework 6a">LINKS (6a)</a></li>
+            <li><a href="#" title="homework 6b">CSS_CHESS (6b)</a></li>
+            <li><a href="#" title="homework 6c">CHESS (6c)</a></li>
+            <li><a href="#" title="homework 6d">FIVE STARS (6d)</a></li>
+            <li><a href="#" title="nothing here" target="_blank">BLANK LINK</a></li>
+        </ul>
+    </div>
+    <!-- Способ расположения cсылок: табличный вид (одна стркоа); Разделители сделаны с использованием псевдоэлементов "after" (для того, чтобы не повторяться, просто придавая стиль правой границе ячеек). Простой метод, однако псевдоэлементы кажутся "лишними" и можно было бы не использовать в реальной ситуации и просто стилизовать правую границу, как в первом варианте.-->
+    <div class="MENU-TABLE-WAY">
+        <table>
+            <tr>
+                <td><a href="#" title="homework 6a">LINKS (6a)</a></td>
+                <td><a href="#" title="homework 6b">CSS_CHESS (6b)</a></td>
+                <td><a href="#" title="homework 6c">CHESS (6c)</a></td>
+                <td><a href="#" title="homework 6d">FIVE STARS (6d)</a></td>
+                <td><a href="#" title="nothing here" target="_blank">BLANK LINK</a></td>
+            </tr>
+        </table>
+        <!-- Способ расположения cсылок: с использованием строчных тегов <span>; Разделители - "img". Худший из представленных 3-х методов, на мой взгляд, код является более громоздким и требует больше памяти, поскольку загружаются картинки. -->
+        <div class="MENU-SPAN-WAY">
+            <span><a href="#" title="homework 6a">LINKS (6a)</a><img src="straight_line.jpg" title="straight line"></span>
+            <span><a href="#" title="homework 6b">CSS_CHESS (6b)</a><img src="straight_line.jpg" title="straight line"></span>
+            <span><a href="#" title="homework 6c">CHESS (6c)</a><img src="straight_line.jpg" title="straight line"></span>
+            <span><a href="#" title="homework 6d">FIVE STARS (6d)</a><img src="straight_line.jpg" title="straight line"></span>
+            <span><a href="#" title="nothing here" target="_blank">BLANK LINK</a></span>
+        </div>
+
+</body>
+
+</html>
