@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FIVE STARS</title>
+    <style>
+        .stars {
+            text-align: left;
+        }
+        
+        .star {
+            background: url(star0.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 76px;
+            height: 78px;
+        }
+        
+        .star:hover,
+        .star:hover~.star {
+            background: url(star1.png);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars" dir="rtl">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+</body>
+
+</html>
